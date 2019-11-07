@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 177523036}
   - component: {fileID: 177523035}
   - component: {fileID: 177523034}
+  - component: {fileID: 177523038}
   m_Layer: 0
   m_Name: Cube1
   m_TagString: Untagged
@@ -212,6 +213,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177523038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177523033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5844e7dfea06f1347b0f2f463a0c2aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedColor: {r: 0, g: 1, b: 0, a: 1}
+  touchedColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1001 &234038540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,6 +508,8 @@ GameObject:
   - component: {fileID: 615727262}
   - component: {fileID: 615727261}
   - component: {fileID: 615727263}
+  - component: {fileID: 615727264}
+  - component: {fileID: 615727265}
   m_Layer: 0
   m_Name: TweenDemoCircle
   m_TagString: Untagged
@@ -577,6 +594,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Circle: {fileID: 615727260}
   Light: {fileID: 705507994}
+--- !u!114 &615727264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615727260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5844e7dfea06f1347b0f2f463a0c2aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedColor: {r: 0, g: 1, b: 0, a: 1}
+  touchedColor: {r: 0, g: 0, b: 1, a: 1}
+--- !u!65 &615727265
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615727260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 8, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +694,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 1.1754945e-38, w: 0}
+  m_BoundingSphereOverride: {x: 3.0865544e+29, y: 9.1977e-41, z: 0, w: 1e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -730,6 +774,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -802,6 +847,22 @@ Transform:
   m_Father: {fileID: 758772013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!1 &1520682581
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +874,7 @@ GameObject:
   - component: {fileID: 1520682585}
   - component: {fileID: 1520682584}
   - component: {fileID: 1520682583}
+  - component: {fileID: 1520682586}
   - component: {fileID: 1520682582}
   m_Layer: 0
   m_Name: Cube2
@@ -894,6 +956,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520682586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520682581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5844e7dfea06f1347b0f2f463a0c2aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightedColor: {r: 0, g: 1, b: 0, a: 1}
+  touchedColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &1577749883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 555767533, guid: 34c21f523e72f45509a4e37ed0293c3b,

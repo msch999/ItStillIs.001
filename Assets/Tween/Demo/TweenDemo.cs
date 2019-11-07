@@ -93,10 +93,10 @@ namespace DigitalRuby.Tween
         private void Update()
         {
 
-            if (GvrControllerInput.GetDevice(GvrControllerHand.Dominant).GetButton(GvrControllerButton.TouchPadButton))
-            {
-                TweenRotate();
-            }
+            //if (GvrControllerInput.GetDevice(GvrControllerHand.Dominant).GetButton(GvrControllerButton.TouchPadButton))
+            //{
+            //    TweenRotate();
+            //}
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
